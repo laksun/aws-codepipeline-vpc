@@ -93,8 +93,8 @@ variable "region" {
   #default = "us-west-2" #Oregon
   #default = "ap-southeast-2"
   #default = "us-east-2"
-  #default = "eu-west-1"
-  default = "us-east-1" # Virginia
+  #default = "us-east-1"
+  default = "eu-west-1" # Virginia
   description = "the region where you want deploy the solution"
 }
 
