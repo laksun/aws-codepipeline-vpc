@@ -23,7 +23,9 @@ module "vpc" {
   name = var.vpc_name
   cidr = var.vpc_cidr
 
-  azs                 = data.aws_availability_zones.available.names
+  azs                 = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+  # data.aws_availability_zones.available.names
+  
   public_subnets      = var.public_subnets
   private_subnets     = var.private_subnets
   database_subnets    = var.database_subnets
